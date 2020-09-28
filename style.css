@@ -12,6 +12,14 @@ body {
     color: #2E2F22;
 }
 
+p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
 a {
     text-decoration: none;
     color: #2E2F22;
@@ -66,9 +74,134 @@ a {
 /* КОНТЕНТ */
 
 .block {
-    margin-top: 60px;
+    width: 1200px;
+    margin: 60px auto;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: Spectral SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 55px;
+    margin-bottom: 50px;
 }
 
 /* КОНТЕНТ СТАТЬИ */
 
+.articles {
+    margin: 550px auto 0;
+}
 
+.articles-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles-header-left {
+    font-family: 'SpectralSC';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 55px;
+}
+
+.articles-header-right {
+    outline: none;
+    height: fit-content;
+    padding: 10px 24px;
+    background: #D7D1C9;
+    border: none;
+    /* appearance: none !important; */
+}
+
+.articles-first {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.article-item {
+    
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.article-item img {
+    width: 100%;
+    height: 286px;
+}
+
+.article-item-title {
+    font-family: Spectral SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 20px 0 10px;
+}
+
+.article-item-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.7;
+}
+
+.articles-second {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.article-second-item {
+    
+    color: white;
+    padding: 60px;
+    height: 552px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    /* position: relative;
+    top: 0;
+    left: 0; */
+}
+
+.fourth {
+    background-image: url('./img/articles/image 4.jpg');
+}
+
+.fifth {
+    background-image: url('./img/articles/image 5.jpg');
+}
+
+.articles-button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.articles-button {
+    margin-top: 80px;
+    background-color: #fff;
+    padding: 14px 50px;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* КОНТЕНТ ОБО МНЕ */
+
+.aboutMe-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.aboutMe-content-right {
+    padding: 40px;
+}
