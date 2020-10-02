@@ -34,6 +34,11 @@
                 <div class="articles-header-left">Все статьи</div>
                 <select name="nnn" id="nnn" class="articles-header-right rounded">
                     <option value="Выбрать тему" class="option-1">Выбрть тему</option>
+                    <option value="Выбрать тему" class="option-1">Путешествия</option>
+                    <option value="Выбрать тему" class="option-1">Город</option>
+                    <option value="Выбрать тему" class="option-1">Книги</option>
+                    <option value="Выбрать тему" class="option-1">Фотографии</option>
+                    <option value="Выбрать тему" class="option-1">Рецепты</option>
                 </select>
             </div>
 
@@ -75,6 +80,7 @@
             <div class="articles-second">
 
                 <div class="article-second-item rounded fourth">
+                    <img src="./img/articles/image 4.jpg" alt="" class="article-second-item-image rounded">
                     <div class="article-item-title">Снимки на плёнку</div>
                     <div class="article-item-subtitle">Поделилась с вами весенними фотографиями, 
                         и секретами удачных снимков.</div>
@@ -85,6 +91,7 @@
                 </div>
 
                 <div class="article-second-item rounded fifth">
+                    <img src="./img/articles/image 5.jpg" alt="" class="article-second-item-image rounded">
                     <!-- <img src="./img/articles/image 4.jpg" alt=""> -->
                     <div class="article-item-title">Домашний чизкейк</div>
                     <div class="article-item-subtitle">Что может быть лучше чизкейка с сезонными
@@ -112,19 +119,22 @@
             <div class="aboutMe-content">
                 <img src="./img/image 6.jpg" alt="" class="aboutMe-content-photo rounded">
                 <div class="aboutMe-content-right">
-                    <p>Всем привет! Меня зовут Аня, и это мой личный блог.
-                        Здесь ты найдёшь рассказы о моих путешествиях, снимки
-                        на плёнку, рецепты, обзоры на книги. В общем, тексты о том,
-                        что мне инетресно.
-                    </p>
-                    <p>Я работаю копирайтером, поэтому мой блоге — это ещё и моё
-                        портфолио. Ниже размещены несколько моих лучших
-                        рабочих текстов. Буду рада новым сотрудничествам!
-                    </p>
-                    <p>Если вы хотите написать мне — это можно сделать в соцсетях
-                        или через форму. Всегда приятно услышать обратную связь
-                        от читателей и познакомиться поближе.                        
-                    </p>
+                    <div>
+                        <p>Всем привет! Меня зовут Аня, и это мой личный блог.
+                            Здесь ты найдёшь рассказы о моих путешествиях, снимки
+                            на плёнку, рецепты, обзоры на книги. В общем, тексты о том,
+                            что мне инетресно.
+                        </p>
+                        <p>Я работаю копирайтером, поэтому мой блоге — это ещё и моё
+                            портфолио. Ниже размещены несколько моих лучших
+                            рабочих текстов. Буду рада новым сотрудничествам!
+                        </p>
+                        <p>Если вы хотите написать мне — это можно сделать в соцсетях
+                            или через форму. Всегда приятно услышать обратную связь
+                            от читателей и познакомиться поближе.                        
+                        </p>
+                    </div>
+                    
 
                     <div class="aboutMe-content-right-stress">
                         Я верю, что каждый раз пробуя новое,
@@ -205,15 +215,41 @@
 
         <form action="https://echo.htmlacademy.ru/courses" method="post" class="form">
             <img src="./img/form.jpg" alt="">
-        
-            <input type="text" class="form-name rounded form-item" name="name" placeholder="Иван Иванов">
-            <input type="email" class="form-email rounded form-item" name="email" placeholder="google@gmail.com">
-            <input type="text" class="form-message rounded form-item" name="message" placeholder="Напишите ваше сообщение здесь">
-            <input type="button" name='submit' value="submit">
+            
+            <div class="form-top">
+                <div class="form-item-wrapper">
+                    <label for="form-name" class="form-label">Ваше имя</label>
+                    <input required  type="text" class="form-name rounded form-item" name="name" placeholder="Иван Иванов">
+                </div>
+                <div class="form-item-wrapper">
+                    <label for="form-email" class="form-label">Email</label>
+                    <input required type="email" class="form-email rounded form-item" name="email" placeholder="google@gmail.com">
+                </div>
+            </div>
 
-        
+            
+            <div class="form-bottom">
+                <div class="form-item-wrapper">
+                    <label for="form-message" class="form-label">Сообщение</label>
+                    <textarea rows="10" class="form-message rounded form-item" name="message" placeholder="Напишите ваше сообщение здесь"></textarea>
+                </div>
+            </div>
+            
+            <div class="button-wrapper">
+                <input min="10" max="200" type="button" name='submit' value="ОТПРАВИТЬ" class="rounded form-item submit-button">
+            </div>
+
         </form>
 
     </main>
+
+    <footer class="footer">
+
+        <div class="footer-item footer-vk">ВК</div>
+        <div class="footer-item footer-telegram">Телеграм</div>
+        <div class="footer-item footer-instagram">Инстаграм</div>
+        <div class="footer-item footer-twitter">Твиттер</div>
+
+    </footer>
 </body>
 </html>
