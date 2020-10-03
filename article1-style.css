@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2E2F22;
+}
+
+/* p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+} */
+
+a {
+    text-decoration: none;
+    color: #2E2F22;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.button {
+    margin-top: 80px;
+    background-color: #fff;
+    padding: 14px 50px;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* ХЕДЕР */
+
+.BG {
+    width: 100%;
+    height: 581px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.BG img {
+    object-fit: cover;
+    width: 100%;
+    
+
+}
+
+/* ХЕДЕР НАВИГАЦИЯ */
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 5px auto 0;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 30px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid #2E2F22;
+}
+
+/* MAIN */
+
+main {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #2E2F22;
+    margin: 550px auto 0;
+    width: 1200px;
+
+
+    color: #2E2F22;
+}
+
+/* СТАТЬЯ */
+
+figure {
+    margin: 50px 0;
+}
+
+figcaption {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.article {
+    padding-right: 202px;
+    box-sizing: border-box;
+}
+
+.article-name {
+    font-family: Spectral SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 55px;
+}
+
+.article-subname {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.article-subname div:first-child {
+    margin-right: 30px;
+}
+
+/* ОЦЕНКА И СОЦСЕТИ */
+
+.sharing {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 50px;
+}
+
+.sharing-item {
+    display: flex;
+    align-items: flex-end;
+}
+
+.sharing-likes div {
+    font-size: 24px;
+    line-height: 26px;
+    margin-left: 10px;
+}
+
+.sharing-sm-item {
+    margin-left: 30px;
+}
+
+/* НАЗАД К СТАТЬЯМ */
+
+.back {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.back svg {
+    margin-left: 30px;
+    margin-top: 6px;
+}
+
+/* ОТЗЫВЫ */
+
+.reviews {
+    background-color: #ECE1E1;
+    padding: 40px 100px;
+    width: fit-content;
+    margin: 70px 0;
+}
+
+.reviews-item-up {
+    display: flex;
+    align-items: center;
+}
+
+.reviews-item-up-name {
+    font-weight: bold;
+    line-height: 22px;
+    margin-left: 10px;
+}
+
+.reviews-item-content {
+    margin: 15px 0 60px;
+}
+
+.reviews-item:last-child .reviews-item-content {
+    margin-bottom: 0;
+}
+
+/* ФОРМА */
+
+form {
+    margin: 70px 0;
+    padding: 0 70px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.form-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.form-inner {
+    display: flex;
+    margin-top: 60px;
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+    width: 220px;
+}
+
+.form-item {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #2E2F22;
+    padding: 12px 0;
+    margin-bottom: 30px;
+    
+}
+
+.form-message {
+    outline: none;
+    width: 450px;
+    height: 100%;
+    border: 1px solid #2E2F22;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Open Sans;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.submit-button {
+    outline: none;
+    justify-self: center;
+    background-color: #fff;
+    border: 1px solid #2E2F22;
+    padding: 12px 0;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+
+
+/* ФУТЕР */
+
+footer {
+    display: flex;
+    padding: 80px;
+    justify-content: center;
+    background-color: #D7D1C9;
+}
+
+.footer-item {
+    margin: 0 50px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: border-bottom 0.1s;
+}
+
+.footer-item:hover {
+    border-bottom: 2px solid #2E2F22;
+}
