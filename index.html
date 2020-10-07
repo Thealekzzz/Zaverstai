@@ -6,6 +6,7 @@
     <title>Заверстаю</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
+    <script src="./main.js" defer></script>
 </head>
 <body>
     <header class="intro">
@@ -31,17 +32,17 @@
             <div class="articles-header">
                 <div class="articles-header-left">Все статьи</div>
                 <select name="nnn" id="nnn" class="articles-header-right rounded">
-                    <option value="Выбрать тему" class="option-1">Выбрть тему</option>
-                    <option value="Выбрать тему" class="option-1">Путешествия</option>
-                    <option value="Выбрать тему" class="option-1">Город</option>
-                    <option value="Выбрать тему" class="option-1">Книги</option>
-                    <option value="Выбрать тему" class="option-1">Фотографии</option>
-                    <option value="Выбрать тему" class="option-1">Рецепты</option>
+                    <option value="Выбрать тему" value="Выбрать тему" class="option-1">Выбрть тему</option>
+                    <option value="Путешествия" class="option-1">Путешествия</option>
+                    <option value="Город" class="option-1">Город</option>
+                    <option value="Книги" class="option-1">Книги</option>
+                    <option value="Фотографии" class="option-1">Фотографии</option>
+                    <option value="Рецепты" class="option-1">Рецепты</option>
                 </select>
             </div>
 
             <div class="articles-first">
-                <div class="article-item">
+                <div data-tag="Путешествия" class="article-item">
                     <img class="rounded" src="./img/articles/image 1.jpg" alt="">
                     <div class="article-item-title">Путешествие в Берлин в августе</div>
                     <div class="article-item-subtitle">Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</div>
@@ -51,7 +52,7 @@
                     </div>
                 </div>
 
-                <div class="article-item">
+                <div data-tag="Город" class="article-item">
                     <img class="rounded" src="./img/articles/image 2.jpg" alt="">
                     <div class="article-item-title">Где выпить колдбрю в Москве</div>
                     <div class="article-item-subtitle">Собрала для вас список любимых кофеен,
@@ -62,7 +63,7 @@
                     </div>
                 </div>
 
-                <div class="article-item">
+                <div data-tag="Книги" class="article-item">
                     <img class="rounded" src="./img/articles/image 3.jpg" alt="">
                     <div class="article-item-title">Прочитано: книжные рекомендации</div>
                     <div class="article-item-subtitle">Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</div>
@@ -77,7 +78,7 @@
 
             <div class="articles-second">
 
-                <div class="article-second-item rounded fourth">
+                <div data-tag="Фотографии" class="article-second-item rounded">
                     <img src="./img/articles/image 4.jpg" alt="" class="article-second-item-image rounded">
                     <div class="article-item-title">Снимки на плёнку</div>
                     <div class="article-item-subtitle">Поделилась с вами весенними фотографиями, 
@@ -88,7 +89,7 @@
                     </div>
                 </div>
 
-                <div class="article-second-item rounded fifth">
+                <div data-tag="Рецепты" class="article-second-item rounded">
                     <img src="./img/articles/image 5.jpg" alt="" class="article-second-item-image rounded">
                     <!-- <img src="./img/articles/image 4.jpg" alt=""> -->
                     <div class="article-item-title">Домашний чизкейк</div>
