@@ -149,6 +149,10 @@ figcaption {
     margin-left: 10px;
 }
 
+.like {
+    cursor: pointer;
+}
+
 .sharing-sm-item {
     margin-left: 30px;
 }
