@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Блогерша Аня</title>
+    <title>Anna Sweet</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -29,8 +29,7 @@
 
     <main class="main">
 
-        <div class="articles block">
-            <a name="articles"></a>
+        <section class="articles block" id="articles">
             <div class="articles-header">
                 <div class="articles-header-left">Все статьи</div>
                 <select name="nnn" id="nnn" class="articles-header-right rounded">
@@ -109,11 +108,9 @@
             </div>
             
 
-        </div>
+        </section>
 
-        <div class="aboutMe block">
-            
-            <a name="aboutMe"></a>
+        <section class="aboutMe block" id="aboutMe">
 
             <div class="aboutMe-title title">
                 <div>Обо мне</div>
@@ -150,11 +147,9 @@
 
             </div>
 
-        </div>
+        </section>
 
-        <div class="portfolio block">
-
-            <a name="portfolio"></a>
+        <section class="portfolio block" id="portfolio">
 
             <div class="portfolio-title title">
                 Портфолио
@@ -162,7 +157,7 @@
 
             <div class="portfolio-content">
 
-                <div class="portfolio-content-item rounded">
+                <a href="./article1.html" class="portfolio-content-item rounded">
                     <img src="./img/portfolio/image 8.jpg" alt="" class="portfolio-content-item-image rounded">
                     
                     <div class="portfolio-content-item-title">
@@ -176,9 +171,9 @@
                     <p>Про основные методы обучения,
                         которые помогут быстро и надолго
                         запомнить информацию</p>
-                </div>
+                </a>
 
-                <div class="portfolio-content-item rounded light-color">
+                <a href="./article1.html" class="portfolio-content-item rounded light-color">
                     <img src="./img/portfolio/image 7.jpg" alt="" class="portfolio-content-item-image rounded">
                     
                     <div class="portfolio-content-item-title">
@@ -193,9 +188,9 @@
                         практика. Но зачем люди целуются?
                         Какие смысли вкладывают в этот ритуал?
                         И где корни этой практики?</p>
-                </div>
+                </a>
 
-                <div class="portfolio-content-item rounded">
+                <a href="./article1.html" class="portfolio-content-item rounded">
                     <img src="./img/portfolio/image 9.jpg" alt="">
                     
                     <div class="portfolio-content-item-title">
@@ -208,7 +203,7 @@
 
                     <p>Поделилась лайфхаками, которые помогают
                         мне работать продуктивно из дома. </p>
-                </div>
+                </a>
 
             </div>
 
@@ -216,9 +211,9 @@
                 <button class="portfolio-button button rounded">Показать ещё</button>
             </div>
 
-        </div>
+        </section>
 
-        <form action="https://echo.htmlacademy.ru/courses" method="post" class="form">
+        <form id="form" action="https://echo.htmlacademy.ru/courses" method="post" class="form">
 
             <a name="form"></a>
             <img src="./img/form.jpg" alt="">
@@ -226,11 +221,11 @@
             <div class="form-top">
                 <div class="form-item-wrapper">
                     <label for="form-name" class="form-label">Ваше имя</label>
-                    <input required  type="text" class="form-name rounded form-item" name="name" placeholder="Иван Иванов">
+                    <input required autocomplete="off" type="text" id="form-name" class="form-name rounded form-item" name="name" placeholder="Иван Иванов">
                 </div>
                 <div class="form-item-wrapper">
                     <label for="form-email" class="form-label">Email</label>
-                    <input required type="email" class="form-email rounded form-item" name="email" placeholder="google@gmail.com">
+                    <input required type="email" id="form-email" class="form-email rounded form-item" name="email" placeholder="google@gmail.com">
                 </div>
             </div>
 
@@ -238,12 +233,12 @@
             <div class="form-bottom">
                 <div class="form-item-wrapper">
                     <label for="form-message" class="form-label">Сообщение</label>
-                    <textarea min="10" max="200" rows="10" class="form-message rounded form-item" name="message" placeholder="Напишите ваше сообщение здесь"></textarea>
+                    <textarea  minlength="10" maxlength="200" rows="10" class="form-message rounded form-item" name="message" placeholder="Напишите ваше сообщение здесь" required></textarea>
                 </div>
             </div>
             
             <div class="button-wrapper">
-                <input type="button" name='submit' value="ОТПРАВИТЬ" class="rounded form-item submit-button">
+                <input type="submit" name='submit' value="ОТПРАВИТЬ" class="rounded form-item submit-button button">
             </div>
 
         </form>
@@ -252,10 +247,10 @@
 
     <footer class="footer">
 
-        <a href="https://vk.com/thealekzzz" class="footer-item footer-vk">ВК</a>
-        <a href="https://t.me/TheAlekzZz" class="footer-item footer-telegram">Телеграм</a>
-        <a href="https://www.instagram.com/the_alekzzz/" class="footer-item footer-instagram">Инстаграм</a>
-        <a href="https://twitter.com/thealekzzz" class="footer-item footer-twitter">Твиттер</a>
+        <a href="https://vk.com/thealekzzz" class="footer-item footer-vk" target="_blank">ВК</a>
+        <a href="https://t.me/TheAlekzZz" class="footer-item footer-telegram" target="_blank">Телеграм</a>
+        <a href="https://www.instagram.com/the_alekzzz/" class="footer-item footer-instagram" target="_blank">Инстаграм</a>
+        <a href="https://twitter.com/thealekzzz" class="footer-item footer-twitter" target="_blank">Твиттер</a>
 
     </footer>
 </body>

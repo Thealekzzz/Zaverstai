@@ -153,6 +153,11 @@ figcaption {
     cursor: pointer;
 }
 
+.sharing-likes-number {
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
 .sharing-sm-item {
     margin-left: 30px;
 }
@@ -167,6 +172,16 @@ figcaption {
     line-height: 49px;
     cursor: pointer;
     width: fit-content;
+    
+}
+
+.back span {
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.back span:hover {
+    border-bottom: 3px solid #2E2F22;
 }
 
 .back svg {
@@ -200,6 +215,14 @@ figcaption {
 
 .reviews-item:last-child .reviews-item-content {
     margin-bottom: 0;
+}
+
+.added-review {
+    background-color: #ffcccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
 }
 
 /* ФОРМА */
@@ -247,7 +270,7 @@ form {
     height: 100%;
     border: 1px solid #2E2F22;
     resize: none;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
     font-family: Open Sans;
     font-size: 16px;

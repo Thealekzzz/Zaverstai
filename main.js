@@ -3,6 +3,9 @@ const articles = document.querySelectorAll('.article-item')
 const articlesSecond = document.querySelectorAll('.article-second-item')
 
 const submitButton = document.querySelector('.submit-button')
+const formMessage = document.querySelector('.form-message')
+const formName = document.querySelector('.form-name')
+const formEmail = document.querySelector('.form-email')
 
 // ВЫБОР СТАТЬИ - НАЧАЛО
 
@@ -40,7 +43,27 @@ articleSelection.addEventListener('input', () => {
 // ОБРАБОТКА ФОРМЫ - НАЧАЛО
 
 submitButton.addEventListener('click', () => {
-    console.log(document.querySelector('textarea').getAttribute('min'));
+    let temp = formMessage.value
+    console.log(String(temp).length);
+
+    // ПРОВЕРЯЮ ЧТОБЫ ВСЕ ПОЛЯ БЫЛИ НЕ ПУСТЫЕ, А ТО У ПОСЕТИТЕЛЯ БУДЕТ ДИССОНАНС
+    if (formName.value.length !== 0 && formEmail.value.length !== 0 &&
+        formMessage.value.length !== 0 &&
+        (String(temp).length < formMessage.getAttribute('minlength') ||
+        String(temp).length > formMessage.getAttribute('maxlength'))) {
+        formMessage.style.color = 'tomato'
+        submitButton.setAttribute('disabled', true)
+    }
+})
+
+formMessage.addEventListener('input', () => {
+    let temp = formMessage.value
+
+    if (String(temp).length > formMessage.getAttribute('minlength') &&
+    String(temp).length < formMessage.getAttribute('maxlength')) {
+        formMessage.style.color = 'black'
+        submitButton.removeAttribute('disabled', true)
+    }
 })
 
 // ОБРАБОТКА ФОРМЫ - КОНЕЦ
