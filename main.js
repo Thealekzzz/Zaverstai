@@ -48,7 +48,6 @@ submitButton.addEventListener('click', () => {
 
     // ПРОВЕРЯЮ ЧТОБЫ ВСЕ ПОЛЯ БЫЛИ НЕ ПУСТЫЕ, А ТО У ПОСЕТИТЕЛЯ БУДЕТ ДИССОНАНС
     if (formName.value.length !== 0 && formEmail.value.length !== 0 &&
-        formMessage.value.length !== 0 &&
         (String(temp).length < formMessage.getAttribute('minlength') ||
         String(temp).length > formMessage.getAttribute('maxlength'))) {
         formMessage.style.color = 'tomato'
@@ -59,8 +58,8 @@ submitButton.addEventListener('click', () => {
 formMessage.addEventListener('input', () => {
     let temp = formMessage.value
 
-    if (String(temp).length > formMessage.getAttribute('minlength') &&
-    String(temp).length < formMessage.getAttribute('maxlength')) {
+    if (String(temp).length >= formMessage.getAttribute('minlength') &&
+    String(temp).length <= formMessage.getAttribute('maxlength')) {
         formMessage.style.color = 'black'
         submitButton.removeAttribute('disabled', true)
     }

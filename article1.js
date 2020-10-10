@@ -83,8 +83,8 @@ commentsButton.addEventListener('click', (event) => {
 commentMessage.addEventListener('input', () => { 
     let temp = commentMessage.value
 
-    if (String(temp).length > commentMessage.getAttribute('minlength') &&
-        String(temp).length < commentMessage.getAttribute('maxlength')) {
+    if (String(temp).length >= commentMessage.getAttribute('minlength') &&
+        String(temp).length <= commentMessage.getAttribute('maxlength')) {
             commentMessage.style.color = 'black'
             // commentsButton.removeAttribute('disabled', true)
     }
