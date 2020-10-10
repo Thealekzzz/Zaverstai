@@ -351,6 +351,10 @@ form img {
     gap: 20px;
 }
 
+.form-message {
+    resize: none;
+}
+
 .button-wrapper {
     display: flex;
     justify-content: center;

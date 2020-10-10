@@ -46,7 +46,6 @@ submitButton.addEventListener('click', () => {
     let temp = formMessage.value
     console.log(String(temp).length);
 
-    // ПРОВЕРЯЮ ЧТОБЫ ВСЕ ПОЛЯ БЫЛИ НЕ ПУСТЫЕ, А ТО У ПОСЕТИТЕЛЯ БУДЕТ ДИССОНАНС
     if (formName.value.length !== 0 && formEmail.value.length !== 0 &&
         (String(temp).length < formMessage.getAttribute('minlength') ||
         String(temp).length > formMessage.getAttribute('maxlength'))) {
