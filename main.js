@@ -7,6 +7,25 @@ const formMessage = document.querySelector('.form-message')
 const formName = document.querySelector('.form-name')
 const formEmail = document.querySelector('.form-email')
 
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+// ПЛАВНАЯ ПРОКРУТКА - НАЧАЛО
+
+for (let anchor of anchors) { // ДА, СПЛАГИАЧЕНО, ПРОСТИТЕ
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
+
+// ПЛАВНАЯ ПРОКРУТКА - КОНЕЦ
+
 // ВЫБОР СТАТЬИ - НАЧАЛО
 
 function selectArticle(array, display) {

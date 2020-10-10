@@ -112,6 +112,7 @@ a {
 .articles-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .articles-header-left {
@@ -124,9 +125,14 @@ a {
 .articles-header-right {
     outline: none;
     height: fit-content;
-    padding: 10px 24px;
+    padding: 10px 50px 10px 24px;
     background: #D7D1C9;
     border: none;
+    background: url('./img/triangle.png') no-repeat, #D7D1C9;
+    background-position-x: 87%;
+    background-position-y: 50%;
+    
+    appearance: none;
     /* appearance: none !important; */
 }
 
